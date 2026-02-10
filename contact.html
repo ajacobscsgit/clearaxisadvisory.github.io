@@ -1,78 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact | ClearAxis Analytics</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClearAxis Analytics</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container nav">
-    <img src="assets/branding/logo.png" class="logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html" class="btn">Contact</a>
-    </nav>
-  </div>
-</header>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <img src="assets/branding/logo.png" alt="ClearAxis Analytics Logo" class="logo">
+      </div>
+        <nav>
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="contact.html" class="btn btn-primary nav-cta active">Contact</a>
+        </nav>
+    </div>
+  </header>
 
-<section class="hero hero-bg">
-  <div class="container hero-center">
-    <img src="assets/images/hero.png" alt="ClearAxis Analytics" class="hero-logo">
-    <h1>Contact</h1>
-    <p>Tell us about your project.</p>
-  </div>
-</section>
-
-
-<section class="section light">
+<main class="section section-intro">
   <div class="container narrow">
+    <div class="contact-hero">
+      <div class="contact-hero-text">
+        <h1>Contact ClearAxis</h1>
+        <p class="lead">Share a few details and we’ll follow up with a clear plan to clean, analyze, or automate your data.</p>
+      </div>
+    </div>
+  </div>
+</main>
 
-    <form action="https://formspree.io/f/xeelovjo" method="POST" class="contact-form">
-      <label>
-        Name
-        <input type="text" name="name" required>
-      </label>
+<section class="section">
+  <div class="container contact-grid">
+    <div class="contact-form-card">
+      <h2>Send a message</h2>
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="form-row">
+          <label class="form-field">
+            <span class="sr-only">Name</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label class="form-field">
+            <span class="sr-only">Email</span>
+            <input type="email" name="email" placeholder="Email address" required />
+          </label>
+        </div>
 
-      <label>
-        Email
-        <input type="email" name="email" required>
-      </label>
+        <label class="form-field">
+          <input type="text" name="company" placeholder="Company (optional)" />
+        </label>
 
-      <label>
-        Message
-        <textarea name="message" rows="6" required></textarea>
-      </label>
+        <label class="form-field">
+          <textarea name="message" rows="6" placeholder="Briefly describe your needs"></textarea>
+        </label>
 
-      <button type="submit" class="btn primary">Send Message</button>
-    </form>
+        <div class="form-row form-actions">
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
 
+    <aside class="contact-info">
+      <div class="info-card">
+        <h3>Our approach</h3>
+        <p>ClearAxis combines careful data hygiene with practical automation and clear reporting. We focus on fast, reliable wins that scale.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Hours</h3>
+        <p>Mon–Fri, 9:00–17:00 (EST)</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Email</h3>
+        <p><a href="mailto:hello@clearaxis.com">hello@clearaxis.com</a></p>
+      </div>
+
+      
+    </aside>
   </div>
 </section>
 
-<footer>
-  <div class="container footer">
-    <img src="assets/branding/logo.png" class="logo">
-    <p>contact@clearaxisanalytics.com</p>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 ClearAxis Analytics</p>
   </div>
 </footer>
 
 </body>
 </html>
-<header class="site-header">
-  <div class="container nav">
-    <a href="index.html" class="brand">
-      <img src="assets/branding/logo.png" alt="ClearAxis Analytics" class="logo">
-    </a>
-
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html" class="btn">Contact</a>
-    </nav>
-  </div>
-</header>

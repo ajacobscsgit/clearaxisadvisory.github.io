@@ -1,97 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Services | ClearAxis Analytics</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClearAxis Analytics</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- Header -->
-<header class="site-header">
-  <div class="container nav">
-    <img src="assets/branding/logo.png" class="logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html" class="btn">Contact</a>
-    </nav>
-  </div>
-</header>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <img src="assets/branding/logo.png" alt="ClearAxis Analytics Logo" class="logo">
+      </div>
+        <nav>
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link active">Services</a>
+          <a href="contact.html" class="btn btn-primary nav-cta">Contact</a>
+        </nav>
+    </div>
+  </header>
 
-<!-- Hero -->
-<section class="hero hero-bg">
-  <div class="container hero-center">
-    <img src="assets/images/hero.png" alt="ClearAxis Analytics" class="hero-logo">
+<!-- Intro -->
+<section class="section section-intro section-soft">
+  <div class="container narrow intro-center">
     <h1>Services</h1>
-    <p>Professional data solutions built for clarity.</p>
   </div>
 </section>
 
-<!-- Interactive Services -->
-<section class="section">
-  <div class="container cards interactive">
-
-    <div class="card expand">
-      <h3>Data Cleanup & Organization</h3>
-      <p class="summary">Messy spreadsheets → clean, usable data</p>
-      <div class="details">
-        <ul>
-          <li>Formula fixes</li>
-          <li>Duplicate removal</li>
-          <li>Standardized structure</li>
-        </ul>
+<!-- Services Grid -->
+<section class="section section--compact">
+  <div class="container services-grid">
+    
+    <!-- Service Card 1 -->
+    <div class="service-card" data-modal="modal-cleanup">
+      <div class="service-image">
+        <img src="assets/images/spreadsheetcleanup.png" alt="Spreadsheet Cleanup">
       </div>
+      <h3>Spreadsheet Cleanup</h3>
+      <p>Fix formulas, remove duplicates, structure data into reliable systems.</p>
     </div>
 
-    <div class="card expand">
-      <h3>Analysis & Reporting</h3>
-      <p class="summary">Understand what your data is telling you</p>
-      <div class="details">
-        <ul>
-          <li>Trend analysis</li>
-          <li>Visual dashboards</li>
-          <li>Decision-ready summaries</li>
-        </ul>
+    <!-- Service Card 2 -->
+    <div class="service-card" data-modal="modal-analysis">
+      <div class="service-image">
+        <img src="assets/images/dataanalysis.png" alt="Data Analysis & Reporting">
       </div>
+      <h3>Data Analysis & Reporting</h3>
+      <p>Transform raw data into clear charts and insights you can act on.</p>
     </div>
 
-    <div class="card expand">
-      <h3>Automation</h3>
-      <p class="summary">Save hours every week</p>
-      <div class="details">
-        <ul>
-          <li>Recurring reports</li>
-          <li>Workflow automation</li>
-          <li>Systemized data pipelines</li>
-        </ul>
+    <!-- Service Card 3 -->
+    <div class="service-card" data-modal="modal-automation">
+      <div class="service-image">
+        <img src="assets/images/coding.png" alt="Automation Builds">
       </div>
+      <h3>Automation Builds</h3>
+      <p>Automated dashboards and reports that work while you focus on strategy.</p>
     </div>
 
   </div>
 </section>
 
-<footer>
-  <div class="container footer">
-    <img src="assets/branding/logo.png" class="logo">
-    <p>© ClearAxis Analytics</p>
+<!-- CTA -->
+<section class="section section-cta">
+  <div class="container narrow">
+    <h2>Ready to get started?</h2>
+    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+  </div>
+</section>
+
+<!-- Modals (hidden by default) -->
+<div id="modal-cleanup" class="service-modal" aria-hidden="true">
+  <div class="modal-window">
+    <button class="modal-close" aria-label="Close">×</button>
+    <h3>Spreadsheet Cleanup — What We Do</h3>
+    <p>
+      We audit your spreadsheets, repair broken formulas, remove duplicate rows, normalize data formats,
+      and build a reliable structure. Deliverables include a documented cleaned file, a short recommendations
+      summary, and optional automation to prevent regressions.
+    </p>
+    <div class="card-cta">
+      <a href="contact.html" class="btn btn-primary">Request Cleanup</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal-analysis" class="service-modal" aria-hidden="true">
+  <div class="modal-window">
+    <button class="modal-close" aria-label="Close">×</button>
+    <h3>Data Analysis & Reporting — Extended</h3>
+    <p>
+      We transform raw data into concise dashboards and written insights. Typical engagements include KPI
+      definition, interactive charts, trend detection, and an executive summary that highlights opportunities
+      and recommended actions. Reports can be standalone or hooked into your existing tools.
+    </p>
+    <div class="card-cta">
+      <a href="contact.html" class="btn btn-primary">Request Analysis</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal-automation" class="service-modal" aria-hidden="true">
+  <div class="modal-window">
+    <button class="modal-close" aria-label="Close">×</button>
+    <h3>Automation Builds — Details</h3>
+    <p>
+      We build automated workflows—scheduled reports, connected dashboards, and data pipelines—that reduce
+      manual work and improve reliability. Solutions are practical, documented, and tailored to your
+      environment to deliver immediate time savings.
+    </p>
+    <div class="card-cta">
+      <a href="contact.html" class="btn btn-primary">Request Automation</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 ClearAxis Analytics</p>
   </div>
 </footer>
-
 </body>
+</body>
+<script src="script.js"></script>
 </html>
-<header class="site-header">
-  <div class="container nav">
-    <a href="index.html" class="brand">
-      <img src="assets/branding/logo.png" alt="ClearAxis Analytics" class="logo">
-    </a>
-
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html" class="btn">Contact</a>
-    </nav>
-  </div>
-</header>
+</html>
