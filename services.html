@@ -35,30 +35,60 @@
   <div class="container services-grid">
     
     <!-- Service Card 1 -->
-    <div class="service-card" data-modal="modal-cleanup">
+    <div class="service-card">
       <div class="service-image">
         <img src="assets/images/spreadsheetcleanup.png" alt="Spreadsheet Cleanup">
       </div>
       <h3>Spreadsheet Cleanup</h3>
       <p>Fix formulas, remove duplicates, structure data into reliable systems.</p>
+      <div class="expanded-content">
+        <p>
+          Detailed cleanup includes formula correction, deduplication, normalization of dates and currencies,
+          and creating validation checks to catch future issues. We deliver a cleaned file, a short report,
+          and optional automation to keep sheets healthy.
+        </p>
+        <div class="card-cta">
+          <a href="contact.html" class="btn btn-primary">Request Cleanup</a>
+        </div>
+      </div>
     </div>
 
     <!-- Service Card 2 -->
-    <div class="service-card" data-modal="modal-analysis">
+    <div class="service-card">
       <div class="service-image">
         <img src="assets/images/dataanalysis.png" alt="Data Analysis & Reporting">
       </div>
       <h3>Data Analysis & Reporting</h3>
       <p>Transform raw data into clear charts and insights you can act on.</p>
+      <div class="expanded-content">
+        <p>
+          Analysis engagements focus on KPIs, interactive charts, anomaly detection, and a concise executive
+          summary with recommended actions. We can package repeatable reports or build dashboards that update
+          automatically.
+        </p>
+        <div class="card-cta">
+          <a href="contact.html" class="btn btn-primary">Request Analysis</a>
+        </div>
+      </div>
     </div>
 
     <!-- Service Card 3 -->
-    <div class="service-card" data-modal="modal-automation">
+    <div class="service-card">
       <div class="service-image">
         <img src="assets/images/coding.png" alt="Automation Builds">
       </div>
       <h3>Automation Builds</h3>
       <p>Automated dashboards and reports that work while you focus on strategy.</p>
+      <div class="expanded-content">
+        <p>
+          We build pragmatic automation: scheduled reports, connected dashboards, and data pipelines that
+          remove manual steps and ensure reproducibility. Implementations are documented and tailored to
+          your stack.
+        </p>
+        <div class="card-cta">
+          <a href="contact.html" class="btn btn-primary">Request Automation</a>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -72,59 +102,14 @@
   </div>
 </section>
 
-<!-- Modals (hidden by default) -->
-<div id="modal-cleanup" class="service-modal" aria-hidden="true">
-  <div class="modal-window">
-    <button class="modal-close" aria-label="Close">×</button>
-    <h3>Spreadsheet Cleanup — What We Do</h3>
-    <p>
-      We audit your spreadsheets, repair broken formulas, remove duplicate rows, normalize data formats,
-      and build a reliable structure. Deliverables include a documented cleaned file, a short recommendations
-      summary, and optional automation to prevent regressions.
-    </p>
-    <div class="card-cta">
-      <a href="contact.html" class="btn btn-primary">Request Cleanup</a>
-    </div>
-  </div>
-</div>
-
-<div id="modal-analysis" class="service-modal" aria-hidden="true">
-  <div class="modal-window">
-    <button class="modal-close" aria-label="Close">×</button>
-    <h3>Data Analysis & Reporting — Extended</h3>
-    <p>
-      We transform raw data into concise dashboards and written insights. Typical engagements include KPI
-      definition, interactive charts, trend detection, and an executive summary that highlights opportunities
-      and recommended actions. Reports can be standalone or hooked into your existing tools.
-    </p>
-    <div class="card-cta">
-      <a href="contact.html" class="btn btn-primary">Request Analysis</a>
-    </div>
-  </div>
-</div>
-
-<div id="modal-automation" class="service-modal" aria-hidden="true">
-  <div class="modal-window">
-    <button class="modal-close" aria-label="Close">×</button>
-    <h3>Automation Builds — Details</h3>
-    <p>
-      We build automated workflows—scheduled reports, connected dashboards, and data pipelines—that reduce
-      manual work and improve reliability. Solutions are practical, documented, and tailored to your
-      environment to deliver immediate time savings.
-    </p>
-    <div class="card-cta">
-      <a href="contact.html" class="btn btn-primary">Request Automation</a>
-    </div>
-  </div>
-</div>
+<!-- Modals removed: using inline expanded content only -->
 
 <footer class="site-footer">
   <div class="container">
     <p>© 2026 ClearAxis Analytics</p>
   </div>
-</footer>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-</body>
-<script src="script.js"></script>
-</html>
 </html>
