@@ -1099,3 +1099,57 @@ body.no-scroll main,
 body.no-scroll section {
   overflow: visible;
 }
+
+/* Compact overrides for contact page when scrolling is locked */
+body.no-scroll .logo {
+  height: 56px;
+}
+
+body.no-scroll .contact-hero {
+  padding: 12px 0 4px;
+}
+
+body.no-scroll .contact-hero-text h1 {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+body.no-scroll .contact-hero .lead {
+  font-size: 0.95rem;
+  max-width: 520px;
+}
+
+body.no-scroll .contact-grid {
+  gap: 14px;
+  grid-template-columns: 1fr 0.95fr;
+  max-width: 980px;
+  padding-bottom: 12px;
+}
+
+body.no-scroll .contact-form-card {
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.04);
+}
+
+body.no-scroll .contact-form h2 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+body.no-scroll .form-field input,
+body.no-scroll .form-field textarea {
+  padding: 8px 10px;
+  font-size: 0.95rem;
+}
+
+body.no-scroll #messageBox {
+  height: 160px;
+  max-height: 160px;
+}
+
+/* Ensure footer stays at bottom and page doesn't scroll */
+body.no-scroll .site-footer {
+  position: relative;
+  z-index: 10;
+}
