@@ -1087,14 +1087,12 @@ body {
 /* Lock page scrolling for contact page while keeping content area usable */
 body.no-scroll {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
 }
 
-/* Allow the main content (sections) to scroll internally if needed */
-body.no-scroll main,
-body.no-scroll section {
-  flex: 1 1 auto;
+/* Make only the contact message textarea scrollable */
+body.no-scroll textarea,
+body.no-scroll #messageBox {
   overflow: auto;
+  max-height: 60vh;
 }
